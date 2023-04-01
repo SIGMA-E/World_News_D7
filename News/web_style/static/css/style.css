@@ -1,0 +1,224 @@
+body {
+    background: linear-gradient( to right, #48D1CC, #40E0D0, #AFEEEE )
+}
+
+.content {
+    text-align: center;
+}
+
+.header {
+    background-color: #5F9EA0;
+    padding: 1px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+/*---------------------------------------------------------------------------*/
+/*стиль верхних ссылок*/
+.header_link ul {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.header_link li {
+    display: inline;
+    margin-right: 5px;
+    margin-left: -1.2%;
+}
+
+.header_link a {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 17%;
+    margin-right: 1%;
+    text-align: center;
+    line-height: 3;
+    color: black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.header_link li:last-child a {
+    margin-right: 0;
+}
+
+.header_link a:link, a:visited, a:focus {
+    background: lightskyblue;
+}
+
+.header_link a:hover {
+    background: gray;
+}
+
+.header_link a:active{
+    background: limegreen;
+    color: white;
+}
+/*КОНЕЦ/
+/*----------------------------------------------------------------------------*/
+
+.list {
+    text-align: left;
+}
+
+.post_ul {
+    list-style-type: square;
+}
+
+.padd{
+    padding-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse; 
+}
+
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #5F9EA0;
+    border: 1px solid #dddddd;
+}
+
+.table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+
+.table_post th {
+    width: 100px;
+}
+
+/*----------------------------------------*/
+
+/*стиль для ввода текта заголовка*/
+.border_input {
+    width: 78.5%;
+    margin: 10px;
+    border: 1px solid;
+    border-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Cambria;
+    font-size: 14px;
+    }
+
+/*стиль для ввода текта заголовка*/
+.border_datetime{
+    width: 200px;
+    margin: 10px;
+    border: 1px solid;
+    border-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Cambria;
+    font-size: 14px;
+    }
+
+/*----------------------------------------*/
+
+/*стиль для выбора через select */
+.border_select {
+    width: 222px;
+    margin: 10px;
+    border: 1px solid;
+    border-color: gray;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Cambria;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+/*----------------------------------------*/
+
+/*стиль для блока поиска поста Search*/
+.search_div {
+    width: 60%;
+    text-align: right;
+    border: solid 1px gray;
+    border-radius: 10px;
+    position: absolute;
+    left: 20%;
+    margin-top: 30px;
+}
+
+/*----------------------------------------*/
+
+/*стль для блока создания поста Create*/
+.create_div {
+    width: 60%;
+    text-align: right;
+    border: solid 1px gray;
+    border-radius: 10px;
+    position: absolute;
+    left: 20%;
+    margin-top: 30px;
+}
+
+/*----------------------------------------*/
+
+/*стль для блока удаления поста Delete*/
+.delete_div {
+    width: 60%;
+    text-align: left;
+    border: solid 1px gray;
+    border-radius: 10px;
+    position: absolute;
+    left: 20%;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+/*----------------------------------------*/
+
+/*стиль для кнопки*/
+.button {
+    background-color: skyblue;
+    font-size: 14px;
+    font-family: Cambria;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin-right: 42%;
+    margin-bottom: 20px;
+
+}
+
+/*----------------------------------------*/
+
+/*стиль для кнопки*/
+.button_del {
+    background-color: orangered;
+    font-size: 14px;
+    font-family: Cambria;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin-left: 42%;
+    margin-bottom: 20px;
+
+}
+/*----------------------------------------*/
+/*стиль для textarea*/
+.text_post {
+    resize: none;
+    width: 80%;
+    height: 20%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/*----------------------------------------*/
+
+.errorlist {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}

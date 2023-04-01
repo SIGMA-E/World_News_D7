@@ -1,0 +1,43 @@
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %}
+Post
+{% endblock title %}
+
+{% block content %}
+    <div class="header header_link">
+        <ul>
+            <li><a href="{% url 'search' %}">Найти пост</a></li>
+            {% if post.type_post == 'nw' %}
+                <li><a href="{% url 'create_news' %}">Создать новость</a></li>
+                <li><a href="{% url 'update_news' pk=post.pk %}">Редактировать новость</a></li>
+                <li><a href="{% url 'delete_news' pk=post.pk %}">Удалить новость</a></li>
+            {% elif post.type_post == 'ar' %}
+                <li><a href="{% url 'create_article' %}">Создать статью</a></li>
+                <li><a href="{% url 'update_article' pk=post.pk %}">Редактировать статью</a></li>
+                <li><a href="{% url 'delete_article' pk=post.pk%}">Удалить статью</a></li>
+            {% endif %}
+            <li><a href="{% url 'list' %}">На главную</a></li>
+        </ul>
+    </div>
+    <div class="padd">
+        <table class="table list">
+            <tr>
+                <th>Заголовок поста</th>
+                <th>Содержание поста</th>
+            </tr>
+            <tr>
+                <td>{{ post.title }}</td>
+                <td>{{ post.text_post|filter_words }}</td>
+            </tr>
+        </table>
+        <hr>
+        <ul class="list post_ul">
+            <li><b>Автор:</b> {{ post.author }}</li>
+            <li><b>Дата публикации:</b> {{ post.time_post|date:'d F Y' }}</li>
+            <li><b>Время публикации:</b> {{ post.time_post|time:'H:i:s' }}</li>
+        </ul>
+    </div>
+{% endblock content %}
